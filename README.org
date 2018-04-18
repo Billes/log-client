@@ -1,0 +1,41 @@
+** Beskrivning
+Enkel log-klient för att skicka specialformatterade loggar till en logtjänst
+
+** Typdefinitioner
+*** Response 
+#+BEGIN_EXAMPLE
+{ 
+  success: boolean, 
+  message?: string 
+}
+#+END_EXAMPLE
+*** Options
+#+BEGIN_EXAMPLE
+{
+  host?: string,
+  token?: string 
+}
+#+END_EXAMPLE
+** Metoder
+*** bootstrap
+#+BEGIN_EXAMPLE
+/**
+ * Bootstraps the logger
+ * Must be used to initialize the logger
+ *
+ * @param {string} system
+ * @param {Options} options
+ * @returns Void
+ */
+#+END_EXAMPLE
+*** critical
+#+BEGIN_EXAMPLE
+/**
+ * Logs with critical severity
+ *
+ * @param {Array<string>} tags
+ * @param {string} Message
+ * @param {mixed} data
+ * @returns Promise<Response>
+ */
+#+END_EXAMPLE
