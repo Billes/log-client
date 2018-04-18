@@ -1,0 +1,19 @@
+{
+  "name": "@billes/log",
+  "main": "lib/index.js",
+  "author": "Andrée Björkgård <andree.bjorkgard@billes.se>",
+  "license": "MIT",
+  "scripts": {
+    "build": "flow-remove-types --pretty src/ -d lib/",
+    "prepublish": "yarn run build",
+    "flow:w": "flow-watch"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.69.0",
+    "flow-remove-types": "^1.2.3",
+    "flow-watch": "^1.1.3"
+  },
+  "dependencies": {
+    "request-promise": "^4.2.2"
+  }
+}
