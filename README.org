@@ -31,7 +31,51 @@ Enkel log-klient för att skicka specialformatterade loggar till en logtjänst
 *** critical
 #+BEGIN_EXAMPLE
 /**
- * Logs with critical severity
+ * Logs with severity critical
+ *
+ * @param {Array<string>} tags
+ * @param {string} Message
+ * @param {mixed} data
+ * @returns Promise<Response>
+ */
+#+END_EXAMPLE
+*** error
+#+BEGIN_EXAMPLE
+/**
+ * Logs with severity error
+ *
+ * @param {Array<string>} tags
+ * @param {string} Message
+ * @param {mixed} data
+ * @returns Promise<Response>
+ */
+#+END_EXAMPLE
+*** debug
+#+BEGIN_EXAMPLE
+/**
+ * Logs with severity debug 
+ *
+ * @param {Array<string>} tags
+ * @param {string} Message
+ * @param {mixed} data
+ * @returns Promise<Response>
+ */
+#+END_EXAMPLE
+*** info
+#+BEGIN_EXAMPLE
+/**
+ * Logs with severity info
+ *
+ * @param {Array<string>} tags
+ * @param {string} Message
+ * @param {mixed} data
+ * @returns Promise<Response>
+ */
+#+END_EXAMPLE
+*** warning
+#+BEGIN_EXAMPLE
+/**
+ * Logs with severity warning
  *
  * @param {Array<string>} tags
  * @param {string} Message
